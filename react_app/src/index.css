@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.h1Design{
+  /* tailwind utilities */
+  @apply bg-blue-700 text-white font-extrabold text-4xl hover:bg-blue-800 transition
+}
+
+
+
+
+
+
+
