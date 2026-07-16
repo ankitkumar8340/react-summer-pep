@@ -1,5 +1,7 @@
 import { useState } from "react";
 import './App.css';
+import Card from "./Card.jsx";
+import Navbar from "./Navbar.jsx";
 
 
 function App(){
@@ -18,10 +20,24 @@ function App(){
 return(
   //XML :- it is used to store, organise, and transport data in a structured, human-readable, and machine
   <>
-  <button onClick={clicklistenermax}>COUNT++</button>
-  <button onClick = {()=> {setCount(count-1)}}>COUNT--</button>
+  <Navbar name="Ankit"/>
+  
+
+  {/* <button onClick={clicklistenermax}>COUNT++</button>
+  <button onClick = {()=> {setCount(count-1)}}>COUNT--</button> */}
   <h1 className="h1Design">Hello world</h1>
+  <div className="flex flex-wrap">
   {count}
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  </div>
   
   </>
 )

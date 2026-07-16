@@ -5,6 +5,21 @@
   @apply bg-blue-700 text-white font-extrabold text-4xl hover:bg-blue-800 transition
 }
 
+.card{
+  @apply border-4 h-60 w-100 font-bold font-serif  text-3xl text-center text-white bg-green-600 cursor-pointer  hover:bg-green-800 transition rounded-xl m-4;
+  /* &&:hover{
+    @apply 
+  } */
+}
+
+.ulNav{
+  @apply flex justify-center items-center gap-10;
+}
+
+.navItems{
+  @apply h-10 w-30 text-xl flex justify-center items-center font-bold cursor-pointer; 
+}
+
 
 
 
