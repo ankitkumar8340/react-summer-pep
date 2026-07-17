@@ -13,11 +13,11 @@
 }
 
 .ulNav{
-  @apply flex justify-center items-center gap-10;
+  @apply flex justify-around items-center gap-10;
 }
 
 .navItems{
-  @apply h-10 w-30 text-xl flex justify-center items-center font-bold cursor-pointer; 
+  @apply h-10 w-30 text-xl flex justify-around items-center font-bold cursor-pointer; 
 }
 
 
