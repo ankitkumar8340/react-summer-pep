@@ -13,6 +13,7 @@ const UseRef = ()=>{
         <button onClick={()=>setCount(count+1)}>count++</button>
 
         <h1>count : {count}</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, deleniti.</p>
         </>
     )
 }
