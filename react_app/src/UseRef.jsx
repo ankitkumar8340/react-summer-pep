@@ -14,6 +14,8 @@ const UseRef = ()=>{
 
         <h1>count : {count}</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, deleniti.</p>
+        <p>Lorem ipsum dolor sit amet.
+        </p>
         </>
     )
 }
