@@ -11,7 +11,8 @@ const UseRef = ()=>{
         <button onClick={focusInput}>focus</button>
 
         <button onClick={()=>setCount(count+1)}>count++</button>
-        {count}
+
+        <h1>count : {count}</h1>
         </>
     )
 }
