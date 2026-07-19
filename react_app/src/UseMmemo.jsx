@@ -24,6 +24,22 @@ const Child = React.memo(function Child({ config, items }) {
   console.log('Child rendered');
   return <div>{items.length} items sorted by {config.sortBy}</div>;
 });
+
+function Dashboard({ transactions, filters }) {
+  const stats = useMemo(() => {
+    const filtered = transactions.filter(t =>
+      (!filters.category || t.category === filters.category) &&
+      t.date >= filters.startDate
+    );
+    return {
+      total: filtered.reduce((sum, t) => sum + t.amount, 0),
+      count: filtered.length,
+      average: filtered.length ? filtered.reduce((s, t) => s + t.amount, 0) / filtered.length : 0,
+    };
+  }, [transactions, filters.category, filters.startDate]);
+
+  return <StatsPanel stats={stats} />;
+}
   return (
     <>
       <h1>Use of UseMemo</h1>
