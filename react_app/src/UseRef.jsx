@@ -16,6 +16,9 @@ const UseRef = ()=>{
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, deleniti.</p>
         <p>Lorem ipsum dolor sit amet.
         </p>
+
+        <h1>hello world</h1>
+        <h2>updating on git</h2>
         </>
     )
 }
