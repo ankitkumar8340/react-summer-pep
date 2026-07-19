@@ -12,7 +12,18 @@ function ProductList({ products, searchTerm }) {
 
   return <ul>{filtered.map(p => <li key={p.id}>{p.name}</li>)}</ul>;
 }
-  
+  function Parent({ items }) {
+  // Without useMemo, `config` is a new object every render,
+  // so <Child> re-renders even if config's contents are identical
+  const config = useMemo(() => ({ sortBy: 'name', order: 'asc' }), []);
+
+  return <Child config={config} items={items} />;
+}
+
+const Child = React.memo(function Child({ config, items }) {
+  console.log('Child rendered');
+  return <div>{items.length} items sorted by {config.sortBy}</div>;
+});
   return (
     <>
       <h1>Use of UseMemo</h1>
