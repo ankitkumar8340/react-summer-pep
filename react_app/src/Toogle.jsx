@@ -16,6 +16,18 @@ const Toggle = () =>{
       transition: "0.3s ease",
       fontFamily: "Arial, sans-serif",
     },
+    button: {
+      marginTop: "20px",
+      padding: "12px 24px",
+      fontSize: "16px",
+      border: "none",
+      borderRadius: "8px",
+      cursor: "pointer",
+      backgroundColor: darkMode ? "#ffffff" : "#222222",
+      color: darkMode ? "#222222" : "#ffffff",
+      transition: "0.3s ease",
+    },
+  };
 
 
     return(
