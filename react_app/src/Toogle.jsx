@@ -2,6 +2,20 @@ import React, { useState } from "react";
 
 
 const Toggle = () =>{
+    const [darkMode, setDarkMode] = useState(false);
+
+  const styles = {
+    container: {
+      height: "100vh",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: darkMode ? "#121212" : "#f4f4f4",
+      color: darkMode ? "#ffffff" : "#000000",
+      transition: "0.3s ease",
+      fontFamily: "Arial, sans-serif",
+    },
 
 
     return(
