@@ -3,6 +3,7 @@ import './App.css';
 import Card from "./Card.jsx";
 import Navbar from "./Navbar.jsx";
 import Dom from "./Dom.jsx";
+import ErrorPage from "./components/ErrorPage.jsx";
 
 function App(){
   const [count, setCount]= useState(0);
@@ -38,7 +39,10 @@ return(
   <Card />
   <Card /> */}
   {/* </div> */}
-  <Dom />
+  {/* <Dom /> */}
+  {/* createBrowserRouter */}
+
+  <ErrorPage />
   
   </>
 )
